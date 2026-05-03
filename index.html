@@ -1,1 +1,614 @@
-teste
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mike PDR Expert | Marketing Local pra Oficinas no Google</title>
+    <meta name="description" content="Especialista em PDR (Martelinho de Ouro) que ajuda oficinas a aparecerem mais no Google. Diagnóstico gratuito do posicionamento local em 24h.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mike PDR Expert | Marketing Local pra Oficinas">
+    <meta property="og:description" content="Diagnóstico gratuito do posicionamento da sua oficina no Google. Atendimento Brasil e EUA.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://links.mikepdrexpert.com">
+    
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #141414;
+            --bg-card: #1a1a1a;
+            --accent: #f5b800;
+            --accent-hover: #ffc826;
+            --whatsapp: #25d366;
+            --whatsapp-hover: #1ebe5d;
+            --text-primary: #ffffff;
+            --text-secondary: #a0a0a0;
+            --border: #2a2a2a;
+        }
+        
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero */
+        .hero {
+            padding: 60px 0 40px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(245, 184, 0, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+        
+        .hero-content { position: relative; z-index: 1; }
+        
+        .profile-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin: 0 auto 24px;
+            border: 3px solid var(--accent);
+            object-fit: cover;
+            box-shadow: 0 0 40px rgba(245, 184, 0, 0.3);
+        }
+        
+        .badge {
+            display: inline-block;
+            background: rgba(245, 184, 0, 0.1);
+            color: var(--accent);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            border: 1px solid rgba(245, 184, 0, 0.2);
+        }
+        
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        
+        .hero-subtitle {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .flags {
+            font-size: 18px;
+            margin-bottom: 32px;
+        }
+        
+        /* Botão WhatsApp DESTAQUE */
+        .cta-whatsapp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(135deg, var(--whatsapp) 0%, #1ebe5d 100%);
+            color: white;
+            text-decoration: none;
+            padding: 20px 28px;
+            border-radius: 16px;
+            font-size: 17px;
+            font-weight: 700;
+            margin: 0 auto 12px;
+            max-width: 100%;
+            box-shadow: 0 10px 40px rgba(37, 211, 102, 0.35);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-whatsapp::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.6s ease;
+        }
+        
+        .cta-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 50px rgba(37, 211, 102, 0.5);
+        }
+        
+        .cta-whatsapp:hover::before { left: 100%; }
+        
+        .cta-whatsapp svg {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+        
+        .cta-helper {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+        
+        /* Seção Dor */
+        .pain-section {
+            background: var(--bg-secondary);
+            padding: 50px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            margin: 20px 0;
+            border-radius: 24px;
+        }
+        
+        .pain-section h2 {
+            font-size: 24px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 24px;
+            line-height: 1.3;
+        }
+        
+        .pain-section h2 span {
+            color: var(--accent);
+        }
+        
+        .pain-stat {
+            text-align: center;
+            font-size: 15px;
+            color: var(--text-secondary);
+            max-width: 540px;
+            margin: 0 auto 16px;
+        }
+        
+        .pain-stat strong {
+            color: var(--text-primary);
+            font-weight: 700;
+        }
+        
+        /* Soluções */
+        .solutions {
+            padding: 40px 0;
+        }
+        
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--accent);
+            text-align: center;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        
+        .solution-grid {
+            display: grid;
+            gap: 16px;
+            grid-template-columns: 1fr;
+        }
+        
+        .solution-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s ease;
+        }
+        
+        .solution-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+        
+        .solution-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+        
+        .solution-card h3 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        
+        .solution-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        
+        /* Diferencial */
+        .differential {
+            padding: 40px 0;
+        }
+        
+        .diff-list {
+            list-style: none;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .diff-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 0;
+            font-size: 15px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .diff-list li:last-child { border-bottom: none; }
+        
+        .diff-icon {
+            flex-shrink: 0;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: 700;
+            margin-top: 2px;
+        }
+        
+        .diff-icon.no { background: rgba(255, 80, 80, 0.15); color: #ff5050; }
+        .diff-icon.yes { background: rgba(245, 184, 0, 0.15); color: var(--accent); }
+        
+        /* CTA Final */
+        .final-cta {
+            background: linear-gradient(135deg, rgba(245, 184, 0, 0.08) 0%, rgba(245, 184, 0, 0.02) 100%);
+            border: 1px solid rgba(245, 184, 0, 0.2);
+            border-radius: 24px;
+            padding: 40px 24px;
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .final-cta h2 {
+            font-size: 26px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
+        
+        .final-cta p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+            max-width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .checks {
+            list-style: none;
+            margin-top: 20px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        
+        .checks li {
+            padding: 4px 0;
+        }
+        
+        .checks li::before {
+            content: '✓ ';
+            color: var(--whatsapp);
+            font-weight: 700;
+        }
+        
+        /* Links sociais */
+        .social-section {
+            padding: 40px 0;
+        }
+        
+        .social-grid {
+            display: grid;
+            gap: 12px;
+            grid-template-columns: 1fr;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 16px 20px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: all 0.25s ease;
+        }
+        
+        .social-link:hover {
+            border-color: var(--accent);
+            background: var(--bg-secondary);
+            transform: translateX(4px);
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            flex-shrink: 0;
+        }
+        
+        .icon-blog-pt { background: linear-gradient(135deg, #f5b800, #ff8a00); }
+        .icon-blog-en { background: linear-gradient(135deg, #4f46e5, #06b6d4); }
+        .icon-instagram { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); }
+        .icon-facebook { background: #1877f2; }
+        .icon-youtube { background: #ff0000; }
+        .icon-tiktok { background: #000; border: 1px solid #25f4ee; }
+        .icon-x { background: #000; }
+        
+        .social-text { flex: 1; min-width: 0; }
+        .social-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        .social-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .social-arrow {
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+        
+        /* Footer */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 30px 0;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin-top: 30px;
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .footer-name {
+            color: var(--text-primary);
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 8px;
+        }
+        
+        /* Mobile ajustes */
+        @media (max-width: 480px) {
+            h1 { font-size: 26px; }
+            .hero { padding: 40px 0 30px; }
+            .pain-section h2 { font-size: 21px; }
+            .final-cta h2 { font-size: 22px; }
+            .cta-whatsapp { font-size: 15px; padding: 18px 20px; }
+        }
+        
+        /* Pulse no botão WhatsApp */
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 10px 40px rgba(37, 211, 102, 0.35); }
+            50% { box-shadow: 0 10px 50px rgba(37, 211, 102, 0.6); }
+        }
+        
+        .cta-whatsapp { animation: pulse-glow 2.5s ease-in-out infinite; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <img src="profile.jpg" alt="Mike PDR Expert" class="profile-photo">
+                <div class="badge">PDR + Marketing Local</div>
+                <h1>Coloco Sua Oficina<br>no Topo do Google</h1>
+                <p class="hero-subtitle">Especialista em Martelinho de Ouro que ajuda oficinas a aparecerem mais quando alguém pesquisa serviço automotivo perto de você.</p>
+                <p class="flags">🇧🇷 Brasil • 🇺🇸 Estados Unidos</p>
+                
+                <a href="https://wa.me/553199999999?text=Ol%C3%A1%20Mike%2C%20quero%20meu%20diagn%C3%B3stico%20gr%C3%A1tis%20do%20Google" class="cta-whatsapp" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                    </svg>
+                    <span>Solicitar Diagnóstico Grátis</span>
+                </a>
+                <p class="cta-helper">Análise gratuita do Google • Resposta em até 2h</p>
+            </div>
+        </section>
+        
+        <!-- DOR -->
+        <section class="pain-section">
+            <div class="container">
+                <h2>Sua oficina aparece no Google quando alguém pesquisa <span>"perto de mim"?</span></h2>
+                <p class="pain-stat"><strong>76%</strong> das pessoas que buscam serviço automotivo no celular visitam o local em menos de 24h.</p>
+                <p class="pain-stat">Se você não aparece nos 3 primeiros resultados, o cliente vai pro concorrente do bairro.</p>
+                <p class="pain-stat">Não importa quanto você é bom no que faz — <strong>se ninguém te encontra, ninguém te contrata.</strong></p>
+            </div>
+        </section>
+        
+        <!-- SOLUÇÕES -->
+        <section class="solutions">
+            <p class="section-title">Como eu ajudo</p>
+            <div class="solution-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">📍</div>
+                    <h3>Site Profissional</h3>
+                    <p>Site otimizado pra busca local, entregue em 48h, com WhatsApp integrado e Google Meu Negócio configurado.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">📈</div>
+                    <h3>Posicionamento no Google</h3>
+                    <p>Acompanhamento mensal pra sua oficina aparecer mais quando alguém pesquisa serviços automotivos no seu bairro.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="solution-icon">💎</div>
+                    <h3>PDR Especializado</h3>
+                    <p>Trabalho como técnico de Martelinho de Ouro nos EUA. Entendo a rotina da oficina porque eu sou um de vocês.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- DIFERENCIAL -->
+        <section class="differential">
+            <p class="section-title">Por que eu sou diferente</p>
+            <ul class="diff-list">
+                <li><span class="diff-icon no">✕</span><span>Não sou agência genérica que nunca pisou numa oficina</span></li>
+                <li><span class="diff-icon no">✕</span><span>Não falo "linguagem de marketing" complicada</span></li>
+                <li><span class="diff-icon yes">✓</span><span>Sou técnico de PDR atuando no Brasil e Estados Unidos</span></li>
+                <li><span class="diff-icon yes">✓</span><span>Atendo em português e inglês</span></li>
+                <li><span class="diff-icon yes">✓</span><span>Falo a sua língua. Entendo a sua dor</span></li>
+                <li><span class="diff-icon yes">✓</span><span>Resolvo SEM você precisar entender de tecnologia</span></li>
+            </ul>
+        </section>
+        
+        <!-- CTA FINAL -->
+        <section class="final-cta">
+            <h2>Diagnóstico Gratuito do Seu Google</h2>
+            <p>Eu gero pra você um relatório visual mostrando EXATAMENTE onde sua oficina aparece (ou não aparece) quando alguém busca seu serviço.</p>
+            
+            <a href="https://wa.me/553199999999?text=Ol%C3%A1%20Mike%2C%20quero%20meu%20diagn%C3%B3stico%20gr%C3%A1tis%20do%20Google" class="cta-whatsapp" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+                </svg>
+                <span>Quero Meu Diagnóstico Grátis</span>
+            </a>
+            
+            <ul class="checks">
+                <li>Resposta em até 2 horas (horário comercial)</li>
+                <li>Análise personalizada da sua oficina</li>
+                <li>Sem cobrança, sem cadastro</li>
+            </ul>
+        </section>
+        
+        <!-- REDES SOCIAIS -->
+        <section class="social-section">
+            <p class="section-title">Explore mais</p>
+            <div class="social-grid">
+                
+                <a href="https://mikemartelinhodeouro.com" class="social-link" target="_blank" rel="noopener">
+                    <div class="social-icon icon-blog-pt">📝</div>
+                    <div class="social-text">
+                        <div class="social-title">Blog em Português</div>
+                        <div class="social-desc">Artigos sobre PDR, granizo e marketing</div>
+                    </div>
+                    <span class="social-arrow">→</span>
+                </a>
+                
+                <a href="https://mikepdrexpert.com" class="social-link" target="_blank" rel="noopener">
+                    <div class="social-icon icon-blog-en">📝</div>
+                    <div class="social-text">
+                        <div class="social-title">Blog in English</div>
+                        <div class="social-desc">PDR, hail damage and shop tips</div>
+                    </div>
+                    <span class="social-arrow">→</span>
+                </a>
+                
+                <a href="https://www.instagram.com/mikepdrexpert" class="social-link" target="_blank" rel="noopener">
+                    <div class="social-icon icon-instagram">📸</div>
+                    <div class="social-text">
+                        <div class="social-title">Instagram</div>
+                        <div class="social-desc">Conteúdo diário de PDR e bastidores</div>
+                    </div>
+                    <span class="social-arrow">→</span>
+                </a>
+                
+                <a href="https://www.facebook.com/MikePDRexpert/" class="social-link" target="_blank" rel="noopener">
+                    <div class="social-icon icon-facebook">📘</div>
+                    <div class="social-text">
+                        <div class="social-title">Facebook</div>
+                        <div class="social-desc">Acompanhe minha página oficial</div>
+                    </div>
+                    <span class="social-arrow">→</span>
+                </a>
+                
+                <a href="https://www.youtube.com/@MikePDRExpert.oficial" class="social-link" target="_blank" rel="noopener">
+                    <div class="social-icon icon-youtube">▶️</div>
+                    <div class="social-text">
+                        <div class="social-title">YouTube</div>
+                        <div class="social-desc">Vídeos completos de técnica e dicas</div>
+                    </div>
+                    <span class="social-arrow">→</span>
+                </a>
+                
+                <a href="https://www.tiktok.com/@mikepdrexpert" class="social-link" target="_blank" rel="noopener">
+                    <div class="social-icon icon-tiktok">🎵</div>
+                    <div class="social-text">
+                        <div class="social-title">TikTok</div>
+                        <div class="social-desc">Vídeos curtos da rotina de PDR</div>
+                    </div>
+                    <span class="social-arrow">→</span>
+                </a>
+                
+                <a href="https://x.com/mikepdrexpert" class="social-link" target="_blank" rel="noopener">
+                    <div class="social-icon icon-x">𝕏</div>
+                    <div class="social-text">
+                        <div class="social-title">X (Twitter)</div>
+                        <div class="social-desc">Atualizações rápidas e insights</div>
+                    </div>
+                    <span class="social-arrow">→</span>
+                </a>
+                
+            </div>
+        </section>
+        
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-name">Mike PDR Expert</div>
+            <p>Atendendo Brasil 🇧🇷 e Estados Unidos 🇺🇸</p>
+            <p style="margin-top: 8px;">📧 <a href="mailto:mikepdrexpert@gmail.com">mikepdrexpert@gmail.com</a></p>
+            <p style="margin-top: 16px; opacity: 0.6; font-size: 12px;">© 2026 Mike PDR Expert</p>
+        </footer>
+        
+    </div>
+
+</body>
+</html>

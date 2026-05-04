@@ -2,613 +2,1702 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike PDR Expert | Marketing Local pra Oficinas no Google</title>
-    <meta name="description" content="Especialista em PDR (Martelinho de Ouro) que ajuda oficinas a aparecerem mais no Google. Diagnóstico gratuito do posicionamento local em 24h.">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Mike PDR Expert | Marketing para Oficinas Automotivas</title>
+    <meta name="description" content="Especialista em Google para martelinho de ouro, lanternagem, pintura e estética automotiva. Diagnóstico gratuito em 2h. 47+ oficinas dominando o Google no Brasil e EUA.">
+    <link rel="canonical" href="https://links.mikepdrexpert.com">
+
     <!-- Open Graph -->
-    <meta property="og:title" content="Mike PDR Expert | Marketing Local pra Oficinas">
-    <meta property="og:description" content="Diagnóstico gratuito do posicionamento da sua oficina no Google. Atendimento Brasil e EUA.">
+    <meta property="og:title" content="Mike PDR Expert | Marketing para Oficinas Automotivas">
+    <meta property="og:description" content="Martelinho, funilaria, pintura ou estética: coloque sua oficina no topo do Google. Diagnóstico gratuito em 2h.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://links.mikepdrexpert.com">
-    
-    <!-- Fonte -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Mike PDR Expert">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mike PDR Expert | Marketing para Oficinas Automotivas">
+    <meta name="twitter:description" content="Martelinho, funilaria, pintura ou estética: domine o Google na sua cidade. Diagnóstico gratuito em 2h.">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Mike PDR Expert",
+        "description": "Especialista em posicionamento no Google para oficinas de martelinho de ouro, lanternagem, pintura e estética automotiva no Brasil e Estados Unidos",
+        "url": "https://links.mikepdrexpert.com",
+        "areaServed": ["BR", "US"],
+        "serviceType": "Marketing Digital para Oficinas Automotivas",
+        "priceRange": "$$",
+        "knowsAbout": ["SEO Local", "Google Meu Negócio", "Marketing para Oficinas Automotivas", "PDR", "Martelinho de Ouro", "Lanternagem e Pintura", "Estética Automotiva", "Polimento e Vitrificação"]
+    }
+    </script>
+
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
         :root {
-            --bg-primary: #0a0a0a;
-            --bg-secondary: #141414;
-            --bg-card: #1a1a1a;
-            --accent: #f5b800;
-            --accent-hover: #ffc826;
-            --whatsapp: #25d366;
-            --whatsapp-hover: #1ebe5d;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0a0;
-            --border: #2a2a2a;
+            --color-bg: #0A0A0F;
+            --color-bg-surface: #12121A;
+            --color-bg-card: rgba(255, 255, 255, 0.04);
+            --color-bg-glass: rgba(255, 255, 255, 0.06);
+            --color-primary: #25D366;
+            --color-primary-hover: #2DE06E;
+            --color-primary-glow: rgba(37, 211, 102, 0.25);
+            --color-urgency: #FF6B35;
+            --color-urgency-glow: rgba(255, 107, 53, 0.2);
+            --color-gold: #FFD700;
+            --color-gold-dim: rgba(255, 215, 0, 0.15);
+            --color-text: #F0F0F5;
+            --color-text-muted: #9CA3AF;
+            --color-text-dim: #6B7280;
+            --color-border: rgba(255, 255, 255, 0.08);
+            --color-border-hover: rgba(255, 255, 255, 0.15);
+            --color-danger: #EF4444;
+            --color-danger-dim: rgba(239, 68, 68, 0.12);
+
+            --font-heading: 'Sora', sans-serif;
+            --font-body: 'DM Sans', sans-serif;
+
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --radius-full: 9999px;
+
+            --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+            --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+            --duration-fast: 0.25s;
+            --duration-normal: 0.4s;
+            --duration-slow: 0.7s;
         }
-        
-        html { scroll-behavior: smooth; }
-        
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
         body {
-            font-family: 'Inter', -apple-system, sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
+            font-family: var(--font-body);
+            background-color: var(--color-bg);
+            color: var(--color-text);
             line-height: 1.6;
             overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-        
-        /* Container */
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Hero */
-        .hero {
-            padding: 60px 0 40px;
-            text-align: center;
-            position: relative;
-        }
-        
-        .hero::before {
+
+        /* Dot-grid background */
+        body::before {
             content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 100%;
-            max-width: 800px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(245, 184, 0, 0.08) 0%, transparent 70%);
+            position: fixed;
+            inset: 0;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px);
+            background-size: 32px 32px;
             pointer-events: none;
             z-index: 0;
         }
-        
-        .hero-content { position: relative; z-index: 1; }
-        
+
+        /* Grain texture overlay */
+        body::after {
+            content: '';
+            position: fixed;
+            inset: 0;
+            opacity: 0.035;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 9998;
+        }
+
+        /* Ambient glow */
+        .ambient-glow {
+            position: fixed;
+            top: -20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 60%;
+            background: radial-gradient(ellipse, rgba(37, 211, 102, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Reveal animations */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity var(--duration-slow) var(--ease-out-expo),
+                        transform var(--duration-slow) var(--ease-out-expo);
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.92);
+            transition: opacity var(--duration-slow) var(--ease-out-expo),
+                        transform var(--duration-slow) var(--ease-out-expo);
+        }
+        .reveal-scale.visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* ============ NOTIFICATION BAR ============ */
+        .notif-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: linear-gradient(90deg, var(--color-urgency), #FF8C42);
+            padding: 10px 20px;
+            text-align: center;
+            font-family: var(--font-heading);
+            font-size: 13px;
+            font-weight: 700;
+            color: #000;
+            letter-spacing: 0.3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .notif-bar-text { flex: 1; }
+        .notif-bar-close {
+            background: none;
+            border: none;
+            color: rgba(0,0,0,0.5);
+            cursor: pointer;
+            font-size: 18px;
+            padding: 4px 8px;
+            line-height: 1;
+            border-radius: 4px;
+            transition: var(--duration-fast);
+        }
+        .notif-bar-close:hover { color: #000; background: rgba(0,0,0,0.1); }
+        .notif-bar.hidden { display: none; }
+
+        /* ============ HERO ============ */
+        .hero {
+            padding: 64px 0 40px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Hero background photo with overlay */
+        .hero-bg {
+            position: absolute;
+            inset: -40px -100vw 0;
+            z-index: -1;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url('mike-foto.jpg');
+            background-size: cover;
+            background-position: center 30%;
+            opacity: 0.18;
+            filter: grayscale(40%) contrast(1.1);
+        }
+        .hero-bg::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg,
+                rgba(10,10,15,0.4) 0%,
+                rgba(10,10,15,0.7) 40%,
+                rgba(10,10,15,0.95) 75%,
+                var(--color-bg) 100%);
+        }
+
+        /* Brand logo */
+        .brand-logo {
+            max-width: 220px;
+            width: 60%;
+            height: auto;
+            margin-bottom: 20px;
+            filter: drop-shadow(0 4px 20px rgba(229, 87, 0, 0.4));
+            animation: logo-glow 4s ease-in-out infinite;
+        }
+        @keyframes logo-glow {
+            0%, 100% { filter: drop-shadow(0 4px 20px rgba(229, 87, 0, 0.4)); }
+            50% { filter: drop-shadow(0 4px 28px rgba(255, 107, 53, 0.6)); }
+        }
+
+        .profile-wrapper {
+            position: relative;
+            margin-bottom: 28px;
+        }
+        .profile-wrapper::before {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            border-radius: var(--radius-full);
+            background: conic-gradient(from 0deg, var(--color-primary), var(--color-gold), var(--color-primary));
+            animation: spin 6s linear infinite;
+            opacity: 0.6;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
         .profile-photo {
             width: 130px;
             height: 130px;
-            border-radius: 50%;
-            margin: 0 auto 24px;
-            border: 3px solid var(--accent);
+            border-radius: var(--radius-full);
             object-fit: cover;
-            box-shadow: 0 0 40px rgba(245, 184, 0, 0.3);
+            object-position: center 20%;
+            border: 4px solid var(--color-bg);
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
         }
-        
-        .badge {
-            display: inline-block;
-            background: rgba(245, 184, 0, 0.1);
-            color: var(--accent);
+
+        .badge-hero {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--color-gold-dim);
+            border: 1px solid rgba(255, 215, 0, 0.25);
+            color: var(--color-gold);
             padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
+            border-radius: var(--radius-full);
+            font-family: var(--font-heading);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
             text-transform: uppercase;
-            margin-bottom: 16px;
-            border: 1px solid rgba(245, 184, 0, 0.2);
+            margin-bottom: 20px;
         }
-        
-        h1 {
-            font-size: 32px;
+
+        .hero h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(30px, 7.5vw, 44px);
             font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 12px;
-            letter-spacing: -0.5px;
+            line-height: 1.1;
+            letter-spacing: -1.5px;
+            margin-bottom: 16px;
+            text-wrap: balance;
         }
-        
+        .hero h1 .gradient-text {
+            background: linear-gradient(135deg, var(--color-primary), #00E676);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
         .hero-subtitle {
-            font-size: 16px;
-            color: var(--text-secondary);
-            margin-bottom: 8px;
-            max-width: 500px;
-            margin-left: auto;
-            margin-right: auto;
+            font-size: 17px;
+            color: var(--color-text-muted);
+            margin-bottom: 20px;
+            max-width: 480px;
+            text-wrap: balance;
+            line-height: 1.5;
         }
-        
+
         .flags {
-            font-size: 18px;
-            margin-bottom: 32px;
-        }
-        
-        /* Botão WhatsApp DESTAQUE */
-        .cta-whatsapp {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            background: linear-gradient(135deg, var(--whatsapp) 0%, #1ebe5d 100%);
-            color: white;
+            font-size: 14px;
+            color: var(--color-text-muted);
+            font-weight: 500;
+            margin-bottom: 32px;
+        }
+
+        /* ============ CTA BUTTON ============ */
+        .cta-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: var(--color-primary);
+            color: #000;
             text-decoration: none;
-            padding: 20px 28px;
-            border-radius: 16px;
+            padding: 18px 28px;
+            border-radius: var(--radius-lg);
+            font-family: var(--font-heading);
             font-size: 17px;
             font-weight: 700;
-            margin: 0 auto 12px;
-            max-width: 100%;
-            box-shadow: 0 10px 40px rgba(37, 211, 102, 0.35);
-            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 440px;
+            margin: 0 auto;
+            box-shadow: 0 6px 28px var(--color-primary-glow), inset 0 1px 0 rgba(255,255,255,0.2);
+            transition: transform var(--duration-normal) var(--ease-out-expo),
+                        box-shadow var(--duration-normal) var(--ease-out-expo),
+                        background var(--duration-fast);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .cta-btn:hover {
+            transform: translateY(-3px) scale(1.01);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.4), inset 0 1px 0 rgba(255,255,255,0.2);
+            background: var(--color-primary-hover);
+        }
+        .cta-btn:active { transform: translateY(-1px) scale(0.99); }
+
+        .cta-btn::after {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 60%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.25), transparent);
+            transform: skewX(-20deg);
+            animation: shimmer 4s infinite;
+        }
+        @keyframes shimmer {
+            0% { left: -100%; }
+            25% { left: 150%; }
+            100% { left: 150%; }
+        }
+
+        .cta-btn svg {
+            width: 24px; height: 24px;
+            fill: #000;
+            flex-shrink: 0;
+        }
+
+        .cta-helper {
+            text-align: center;
+            margin-top: 12px;
+            font-size: 13px;
+            color: var(--color-text-muted);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .cta-helper::before {
+            content: '';
+            width: 8px; height: 8px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--color-primary);
+            animation: blink-pulse 2s infinite;
+        }
+        @keyframes blink-pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        /* ============ SOCIAL PROOF STRIP ============ */
+        .social-proof-strip {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 24px 0;
+            margin: 16px 0 40px;
+            border-top: 1px solid var(--color-border);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .proof-counter {
+            display: flex;
+            align-items: baseline;
+            gap: 6px;
+        }
+        .proof-number {
+            font-family: var(--font-heading);
+            font-size: 32px;
+            font-weight: 800;
+            color: var(--color-primary);
+        }
+        .proof-label {
+            font-size: 13px;
+            color: var(--color-text-muted);
+            max-width: 100px;
+            line-height: 1.3;
+        }
+
+        .proof-avatars {
+            display: flex;
+            align-items: center;
+        }
+        .proof-avatar {
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            border: 2px solid var(--color-bg);
+            margin-left: -10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .proof-avatar:first-child { margin-left: 0; }
+        .av-1 { background: #3B82F6; }
+        .av-2 { background: #8B5CF6; }
+        .av-3 { background: #EC4899; }
+        .av-4 { background: #F59E0B; }
+        .av-5 { background: var(--color-primary); font-size: 10px; }
+
+        /* ============ PAIN SECTION ============ */
+        .pain-section {
+            background: linear-gradient(180deg, var(--color-bg-surface), transparent);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: 40px 28px;
+            margin-bottom: 48px;
+            text-align: center;
             position: relative;
             overflow: hidden;
         }
-        
-        .cta-whatsapp::before {
+        .pain-section::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.6s ease;
+            top: 0; left: 50%; transform: translateX(-50%);
+            width: 200px; height: 200px;
+            background: radial-gradient(circle, rgba(239,68,68,0.08), transparent 70%);
+            pointer-events: none;
         }
-        
-        .cta-whatsapp:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 50px rgba(37, 211, 102, 0.5);
-        }
-        
-        .cta-whatsapp:hover::before { left: 100%; }
-        
-        .cta-whatsapp svg {
-            width: 24px;
-            height: 24px;
-            flex-shrink: 0;
-        }
-        
-        .cta-helper {
-            font-size: 13px;
-            color: var(--text-secondary);
-            margin-bottom: 40px;
-        }
-        
-        /* Seção Dor */
-        .pain-section {
-            background: var(--bg-secondary);
-            padding: 50px 0;
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-            margin: 20px 0;
-            border-radius: 24px;
-        }
-        
+
         .pain-section h2 {
-            font-size: 24px;
-            font-weight: 800;
-            text-align: center;
+            font-family: var(--font-heading);
+            font-size: 20px;
+            font-weight: 700;
             margin-bottom: 24px;
             line-height: 1.3;
         }
-        
-        .pain-section h2 span {
-            color: var(--accent);
-        }
-        
-        .pain-stat {
-            text-align: center;
-            font-size: 15px;
-            color: var(--text-secondary);
-            max-width: 540px;
-            margin: 0 auto 16px;
-        }
-        
-        .pain-stat strong {
-            color: var(--text-primary);
-            font-weight: 700;
-        }
-        
-        /* Soluções */
-        .solutions {
-            padding: 40px 0;
-        }
-        
-        .section-title {
-            font-size: 14px;
-            font-weight: 700;
-            color: var(--accent);
-            text-align: center;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            margin-bottom: 24px;
-        }
-        
-        .solution-grid {
-            display: grid;
-            gap: 16px;
-            grid-template-columns: 1fr;
-        }
-        
-        .solution-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 24px;
-            transition: all 0.3s ease;
-        }
-        
-        .solution-card:hover {
-            border-color: var(--accent);
-            transform: translateY(-2px);
-        }
-        
-        .solution-icon {
-            font-size: 32px;
-            margin-bottom: 12px;
-        }
-        
-        .solution-card h3 {
-            font-size: 18px;
-            font-weight: 700;
+
+        .stat-number {
+            font-family: var(--font-heading);
+            font-size: 56px;
+            font-weight: 800;
+            color: var(--color-urgency);
+            display: block;
+            line-height: 1;
             margin-bottom: 8px;
+            text-shadow: 0 0 40px var(--color-urgency-glow);
         }
-        
+
+        .pain-text {
+            font-size: 15px;
+            color: var(--color-text-muted);
+            margin-bottom: 14px;
+            line-height: 1.5;
+        }
+        .pain-text strong { color: var(--color-text); }
+        .pain-text:last-child { margin-bottom: 0; }
+
+        /* ============ SECTION TITLES ============ */
+        .section-header {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+        .section-label {
+            font-family: var(--font-heading);
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--color-text-dim);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+        .section-label::before, .section-label::after {
+            content: '';
+            width: 24px; height: 1px;
+            background: var(--color-border);
+        }
+
+        /* ============ SOLUTION CARDS ============ */
+        .cards-grid {
+            display: grid;
+            gap: 14px;
+            margin-bottom: 48px;
+        }
+
+        .solution-card {
+            background: var(--color-bg-glass);
+            backdrop-filter: blur(12px) saturate(150%);
+            -webkit-backdrop-filter: blur(12px) saturate(150%);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            transition: border-color var(--duration-normal), transform var(--duration-normal) var(--ease-out-expo), background var(--duration-normal);
+            container-type: inline-size;
+        }
+        .solution-card:hover {
+            border-color: var(--color-border-hover);
+            transform: translateY(-2px);
+            background: rgba(255,255,255,0.07);
+        }
+
+        .solution-card .card-icon {
+            width: 40px; height: 40px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 14px;
+            font-size: 20px;
+        }
+        .card-icon-green { background: rgba(37, 211, 102, 0.12); color: var(--color-primary); }
+        .card-icon-gold { background: var(--color-gold-dim); color: var(--color-gold); }
+        .card-icon-blue { background: rgba(59, 130, 246, 0.12); color: #3B82F6; }
+
+        .solution-card h3 {
+            font-family: var(--font-heading);
+            font-size: 17px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
         .solution-card p {
             font-size: 14px;
-            color: var(--text-secondary);
-            line-height: 1.6;
+            color: var(--color-text-muted);
+            line-height: 1.5;
         }
-        
-        /* Diferencial */
-        .differential {
-            padding: 40px 0;
+
+        /* ============ TESTIMONIALS ============ */
+        .testimonials-section { margin-bottom: 48px; }
+
+        .testimonial-card {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 24px;
+            margin-bottom: 14px;
+            position: relative;
         }
-        
-        .diff-list {
+        .testimonial-card::before {
+            content: '\201C';
+            position: absolute;
+            top: 12px; right: 20px;
+            font-size: 48px;
+            color: rgba(255,255,255,0.04);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .testimonial-stars {
+            display: flex;
+            gap: 2px;
+            margin-bottom: 12px;
+        }
+        .star { color: var(--color-gold); font-size: 14px; }
+
+        .testimonial-text {
+            font-size: 15px;
+            line-height: 1.5;
+            margin-bottom: 14px;
+            font-style: italic;
+            color: var(--color-text);
+        }
+
+        .testimonial-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        .testimonial-author {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .testimonial-city {
+            font-size: 12px;
+            color: var(--color-text-dim);
+        }
+        .testimonial-result {
+            background: rgba(37, 211, 102, 0.1);
+            border: 1px solid rgba(37, 211, 102, 0.2);
+            color: var(--color-primary);
+            font-family: var(--font-heading);
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: var(--radius-full);
+            white-space: nowrap;
+        }
+
+        /* ============ OBJECTIONS ============ */
+        .objections-list {
             list-style: none;
-            max-width: 500px;
-            margin: 0 auto;
+            background: var(--color-bg-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 20px 24px;
+            margin-bottom: 48px;
         }
-        
-        .diff-list li {
+        .objections-list li {
             display: flex;
             align-items: flex-start;
-            gap: 12px;
-            padding: 12px 0;
+            gap: 14px;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.04);
             font-size: 15px;
-            border-bottom: 1px solid var(--border);
+            line-height: 1.4;
         }
-        
-        .diff-list li:last-child { border-bottom: none; }
-        
-        .diff-icon {
-            flex-shrink: 0;
-            width: 22px;
-            height: 22px;
+        .objections-list li:last-child { border-bottom: none; padding-bottom: 0; }
+        .objections-list li:first-child { padding-top: 0; }
+
+        .icon-badge {
+            width: 24px; height: 24px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 13px;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+        .icon-badge-red { background: var(--color-danger-dim); color: var(--color-danger); }
+        .icon-badge-green { background: rgba(37, 211, 102, 0.12); color: var(--color-primary); }
+
+        .icon-badge svg { width: 12px; height: 12px; }
+
+        /* ============ ABOUT / AUTHORITY ============ */
+        .about-section {
+            background: linear-gradient(160deg, var(--color-bg-surface) 0%, transparent 100%);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-xl);
+            padding: 32px 24px;
+            margin-bottom: 48px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-photo-wrap {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            margin-bottom: 24px;
+            aspect-ratio: 16 / 10;
+            background: var(--color-bg-card);
+        }
+        .about-photo-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.8s var(--ease-out-expo);
+        }
+        .about-section:hover .about-photo-wrap img {
+            transform: scale(1.04);
+        }
+
+        .about-photo-wrap::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 60%, rgba(10,10,15,0.6) 100%);
+            pointer-events: none;
+        }
+
+        .about-photo-badge {
+            position: absolute;
+            bottom: 14px;
+            left: 14px;
+            background: rgba(10,10,15,0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid var(--color-border);
+            color: var(--color-primary);
+            font-family: var(--font-heading);
+            font-size: 11px;
             font-weight: 700;
-            margin-top: 2px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 6px 12px;
+            border-radius: var(--radius-full);
+            z-index: 2;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
-        
-        .diff-icon.no { background: rgba(255, 80, 80, 0.15); color: #ff5050; }
-        .diff-icon.yes { background: rgba(245, 184, 0, 0.15); color: var(--accent); }
-        
-        /* CTA Final */
-        .final-cta {
-            background: linear-gradient(135deg, rgba(245, 184, 0, 0.08) 0%, rgba(245, 184, 0, 0.02) 100%);
-            border: 1px solid rgba(245, 184, 0, 0.2);
-            border-radius: 24px;
-            padding: 40px 24px;
+        .about-photo-badge::before {
+            content: '';
+            width: 6px; height: 6px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--color-primary);
+        }
+
+        .about-content {
             text-align: center;
-            margin: 30px 0;
         }
-        
-        .final-cta h2 {
-            font-size: 26px;
+        .about-content h3 {
+            font-family: var(--font-heading);
+            font-size: 22px;
             font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 14px;
+            text-wrap: balance;
+        }
+        .about-content h3 .accent {
+            color: var(--color-primary);
+        }
+        .about-content p {
+            font-size: 15px;
+            color: var(--color-text-muted);
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        .about-content p:last-child { margin-bottom: 0; }
+        .about-content strong { color: var(--color-text); }
+
+        .about-credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .credential-chip {
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            color: var(--color-text-muted);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 6px 12px;
+            border-radius: var(--radius-full);
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .credential-chip svg { width: 12px; height: 12px; color: var(--color-primary); }
+
+        @media (min-width: 640px) {
+            .about-section {
+                padding: 40px 32px;
+            }
+            .about-photo-wrap {
+                aspect-ratio: 16 / 9;
+            }
+        }
+
+        /* ============ RESULTS BEFORE/AFTER ============ */
+        .results-section { margin-bottom: 48px; }
+
+        .results-comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .result-box {
+            border-radius: var(--radius-lg);
+            padding: 24px 16px;
+            text-align: center;
+            border: 1px solid var(--color-border);
+        }
+        .result-before {
+            background: rgba(239, 68, 68, 0.04);
+            border-color: rgba(239, 68, 68, 0.15);
+        }
+        .result-after {
+            background: rgba(37, 211, 102, 0.04);
+            border-color: rgba(37, 211, 102, 0.2);
+        }
+
+        .result-label {
+            font-family: var(--font-heading);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
             margin-bottom: 12px;
+        }
+        .result-before .result-label { color: var(--color-danger); }
+        .result-after .result-label { color: var(--color-primary); }
+
+        .result-position {
+            font-family: var(--font-heading);
+            font-size: 42px;
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+        .result-before .result-position { color: var(--color-text-dim); text-decoration: line-through; }
+        .result-after .result-position { color: var(--color-primary); text-shadow: 0 0 20px var(--color-primary-glow); }
+
+        .result-desc {
+            font-size: 12px;
+            color: var(--color-text-muted);
             line-height: 1.3;
         }
-        
-        .final-cta p {
-            font-size: 15px;
-            color: var(--text-secondary);
-            margin-bottom: 24px;
-            max-width: 480px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .checks {
-            list-style: none;
-            margin-top: 20px;
+
+        .results-badge {
+            text-align: center;
+            margin-top: 16px;
             font-size: 13px;
-            color: var(--text-secondary);
+            color: var(--color-text-muted);
         }
-        
-        .checks li {
-            padding: 4px 0;
+        .results-badge strong { color: var(--color-text); }
+
+        /* ============ FINAL CTA ============ */
+        .final-cta {
+            background: linear-gradient(160deg, rgba(37, 211, 102, 0.08) 0%, rgba(255,215,0,0.04) 50%, transparent 100%);
+            border: 1px solid rgba(37, 211, 102, 0.15);
+            border-radius: var(--radius-xl);
+            padding: 40px 24px;
+            text-align: center;
+            margin-bottom: 48px;
+            position: relative;
+            overflow: hidden;
         }
-        
-        .checks li::before {
-            content: '✓ ';
-            color: var(--whatsapp);
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: conic-gradient(from 180deg, transparent, rgba(37,211,102,0.03), transparent 30%);
+            animation: spin 12s linear infinite;
+            pointer-events: none;
+        }
+
+        .urgency-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--color-urgency-glow);
+            border: 1px solid rgba(255, 107, 53, 0.3);
+            color: var(--color-urgency);
+            font-family: var(--font-heading);
+            font-size: 12px;
             font-weight: 700;
+            padding: 6px 14px;
+            border-radius: var(--radius-full);
+            margin-bottom: 20px;
+            animation: urgency-pulse 3s infinite;
         }
-        
-        /* Links sociais */
-        .social-section {
-            padding: 40px 0;
+        @keyframes urgency-pulse {
+            0%, 100% { box-shadow: 0 0 0 0 var(--color-urgency-glow); }
+            50% { box-shadow: 0 0 0 6px transparent; }
         }
-        
-        .social-grid {
-            display: grid;
-            gap: 12px;
-            grid-template-columns: 1fr;
+
+        .final-cta h2 {
+            font-family: var(--font-heading);
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            position: relative;
         }
-        
-        .social-link {
+        .final-cta > p {
+            color: var(--color-text-muted);
+            font-size: 15px;
+            margin-bottom: 24px;
+            position: relative;
+        }
+
+        .cta-bullets {
+            list-style: none;
+            text-align: left;
+            max-width: 340px;
+            margin: 0 auto 28px;
+            position: relative;
+        }
+        .cta-bullets li {
             display: flex;
             align-items: center;
-            gap: 14px;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 14px;
-            padding: 16px 20px;
-            text-decoration: none;
-            color: var(--text-primary);
-            transition: all 0.25s ease;
+            gap: 10px;
+            padding: 6px 0;
+            font-size: 14px;
+            color: var(--color-text-muted);
         }
-        
-        .social-link:hover {
-            border-color: var(--accent);
-            background: var(--bg-secondary);
-            transform: translateX(4px);
+        .cta-bullets li::before {
+            content: '';
+            width: 6px; height: 6px;
+            background: var(--color-primary);
+            border-radius: 50%;
+            flex-shrink: 0;
         }
-        
-        .social-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
+
+        .trust-row {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 20px;
-            flex-shrink: 0;
+            gap: 16px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+            position: relative;
         }
-        
-        .icon-blog-pt { background: linear-gradient(135deg, #f5b800, #ff8a00); }
-        .icon-blog-en { background: linear-gradient(135deg, #4f46e5, #06b6d4); }
-        .icon-instagram { background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045); }
-        .icon-facebook { background: #1877f2; }
-        .icon-youtube { background: #ff0000; }
-        .icon-tiktok { background: #000; border: 1px solid #25f4ee; }
-        .icon-x { background: #000; }
-        
-        .social-text { flex: 1; min-width: 0; }
-        .social-title {
-            font-size: 15px;
-            font-weight: 600;
-            margin-bottom: 2px;
-        }
-        .social-desc {
+        .trust-item {
             font-size: 12px;
-            color: var(--text-secondary);
+            color: var(--color-text-dim);
+            display: flex;
+            align-items: center;
+            gap: 4px;
         }
-        
-        .social-arrow {
-            color: var(--text-secondary);
+
+        /* ============ INSTAGRAM CTA ============ */
+        .instagram-section { margin-bottom: 40px; }
+
+        .instagram-card {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 20px 22px;
+            border-radius: var(--radius-lg);
+            text-decoration: none;
+            color: var(--color-text);
+            background:
+                linear-gradient(135deg, rgba(131,58,180,0.18) 0%, rgba(253,29,29,0.14) 50%, rgba(252,176,69,0.16) 100%),
+                var(--color-bg-surface);
+            border: 1px solid rgba(253,29,29,0.25);
+            box-shadow:
+                0 8px 32px rgba(253,29,29,0.12),
+                inset 0 1px 0 rgba(255,255,255,0.08);
+            overflow: hidden;
+            transition: transform var(--duration-normal) var(--ease-out-expo),
+                        box-shadow var(--duration-normal) var(--ease-out-expo),
+                        border-color var(--duration-fast);
+        }
+
+        .instagram-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(253,29,29,0.45);
+            box-shadow:
+                0 14px 40px rgba(253,29,29,0.22),
+                inset 0 1px 0 rgba(255,255,255,0.1);
+        }
+
+        .ig-glow {
+            position: absolute;
+            top: -60%; left: -20%;
+            width: 140%; height: 220%;
+            background: conic-gradient(from 90deg at 50% 50%,
+                rgba(255,220,128,0.25),
+                rgba(253,29,29,0.18),
+                rgba(131,58,180,0.22),
+                rgba(64,93,230,0.18),
+                rgba(255,220,128,0.25));
+            filter: blur(40px);
+            opacity: 0.55;
+            animation: ig-rotate 14s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes ig-rotate { to { transform: rotate(360deg); } }
+
+        .ig-icon {
+            position: relative;
+            z-index: 1;
+            width: 52px; height: 52px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #f9ce34 0%, #ee2a7b 50%, #6228d7 100%);
+            color: #fff;
+            box-shadow: 0 6px 20px rgba(238,42,123,0.4), inset 0 1px 0 rgba(255,255,255,0.25);
             flex-shrink: 0;
         }
-        
-        /* Footer */
-        footer {
-            border-top: 1px solid var(--border);
-            padding: 30px 0;
-            text-align: center;
-            color: var(--text-secondary);
-            font-size: 13px;
-            margin-top: 30px;
+        .ig-icon svg {
+            width: 26px;
+            height: 26px;
         }
-        
-        footer a {
-            color: var(--accent);
-            text-decoration: none;
+
+        .ig-content {
+            position: relative;
+            z-index: 1;
+            flex: 1;
+            min-width: 0;
         }
-        
-        .footer-name {
-            color: var(--text-primary);
+        .ig-handle {
+            font-family: var(--font-heading);
             font-weight: 700;
-            font-size: 15px;
-            margin-bottom: 8px;
+            font-size: 16px;
+            line-height: 1.2;
+            color: var(--color-text);
+            margin-bottom: 2px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-        
-        /* Mobile ajustes */
+        .ig-title {
+            font-size: 13px;
+            color: var(--color-text-muted);
+            line-height: 1.3;
+            margin-bottom: 6px;
+        }
+        .ig-stats {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            color: #fcb045;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .ig-stat-dot {
+            width: 6px; height: 6px;
+            border-radius: 50%;
+            background: #fcb045;
+            box-shadow: 0 0 8px #fcb045;
+            animation: blink-pulse 2s infinite;
+        }
+
+        .ig-cta {
+            position: relative;
+            z-index: 1;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 14px;
+            border-radius: var(--radius-full);
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            font-family: var(--font-heading);
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            flex-shrink: 0;
+            transition: background var(--duration-fast), transform var(--duration-fast);
+        }
+        .instagram-card:hover .ig-cta {
+            background: rgba(255,255,255,0.15);
+            transform: translateX(2px);
+        }
+        .ig-cta svg { transition: transform var(--duration-fast); }
+        .instagram-card:hover .ig-cta svg { transform: translateX(2px); }
+
         @media (max-width: 480px) {
-            h1 { font-size: 26px; }
-            .hero { padding: 40px 0 30px; }
-            .pain-section h2 { font-size: 21px; }
-            .final-cta h2 { font-size: 22px; }
-            .cta-whatsapp { font-size: 15px; padding: 18px 20px; }
+            .instagram-card { padding: 16px; gap: 12px; }
+            .ig-icon { width: 46px; height: 46px; border-radius: 12px; }
+            .ig-icon svg { width: 22px; height: 22px; }
+            .ig-handle { font-size: 14px; }
+            .ig-title { font-size: 12px; }
+            .ig-cta { padding: 7px 12px; font-size: 11px; }
         }
-        
-        /* Pulse no botão WhatsApp */
-        @keyframes pulse-glow {
-            0%, 100% { box-shadow: 0 10px 40px rgba(37, 211, 102, 0.35); }
-            50% { box-shadow: 0 10px 50px rgba(37, 211, 102, 0.6); }
+
+        /* ============ FOOTER ============ */
+        footer {
+            text-align: center;
+            padding: 32px 0;
+            border-top: 1px solid var(--color-border);
+            font-size: 13px;
+            color: var(--color-text-dim);
         }
-        
-        .cta-whatsapp { animation: pulse-glow 2.5s ease-in-out infinite; }
+        footer strong { color: var(--color-text-muted); }
+
+        /* ============ STICKY CTA BAR ============ */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            z-index: 90;
+            background: linear-gradient(180deg, transparent 0%, rgba(10,10,15,0.95) 30%);
+            padding: 16px 20px calc(16px + env(safe-area-inset-bottom, 0px));
+            transform: translateY(100%);
+            transition: transform var(--duration-normal) var(--ease-out-expo);
+            pointer-events: none;
+        }
+        .sticky-cta.visible {
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+        .sticky-cta .cta-btn {
+            max-width: 100%;
+            padding: 14px 20px;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        /* ============ TOAST NOTIFICATION ============ */
+        .toast {
+            position: fixed;
+            bottom: 100px; left: 16px; right: 16px;
+            max-width: 340px;
+            z-index: 80;
+            background: var(--color-bg-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            padding: 14px 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+            transform: translateY(20px);
+            opacity: 0;
+            transition: transform var(--duration-normal) var(--ease-out-back), opacity var(--duration-normal);
+            pointer-events: none;
+        }
+        .toast.show {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .toast-avatar {
+            width: 36px; height: 36px;
+            border-radius: 50%;
+            background: var(--color-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+            flex-shrink: 0;
+        }
+
+        .toast-content { flex: 1; }
+        .toast-message {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+        .toast-time {
+            font-size: 11px;
+            color: var(--color-text-dim);
+            margin-top: 2px;
+        }
+
+        /* ============ RESPONSIVE ============ */
+        @media (max-width: 480px) {
+            .hero { padding: 48px 0 32px; }
+            .hero h1 { font-size: 28px; letter-spacing: -1px; }
+            .hero-subtitle { font-size: 15px; }
+            .cta-btn { font-size: 15px; padding: 16px 20px; }
+            .pain-section { padding: 32px 20px; }
+            .stat-number { font-size: 44px; }
+            .final-cta { padding: 32px 20px; }
+            .results-comparison { gap: 8px; }
+            .result-position { font-size: 34px; }
+            .proof-number { font-size: 26px; }
+        }
+
+        @media (min-width: 640px) {
+            .cards-grid { grid-template-columns: 1fr 1fr; }
+            .toast { left: auto; right: 24px; bottom: 110px; }
+        }
+
+        /* Reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            .reveal, .reveal-scale { opacity: 1; transform: none; }
+        }
     </style>
 </head>
 <body>
 
+    <div class="ambient-glow"></div>
+
+    <!-- NOTIFICATION BAR -->
+    <div class="notif-bar" id="notifBar">
+        <span class="notif-bar-text">Diagnóstico gratuito por tempo limitado</span>
+        <button class="notif-bar-close" id="notifClose" aria-label="Fechar">&times;</button>
+    </div>
+
     <div class="container">
-        
+
         <!-- HERO -->
-        <section class="hero">
-            <div class="hero-content">
-                <img src="profile.jpg" alt="Mike PDR Expert" class="profile-photo">
-                <div class="badge">PDR + Marketing Local</div>
-                <h1>Coloco Sua Oficina<br>no Topo do Google</h1>
-                <p class="hero-subtitle">Especialista em Martelinho de Ouro que ajuda oficinas a aparecerem mais quando alguém pesquisa serviço automotivo perto de você.</p>
-                <p class="flags">🇧🇷 Brasil • 🇺🇸 Estados Unidos</p>
-                
-                <a href="https://wa.me/553199999999?text=Ol%C3%A1%20Mike%2C%20quero%20meu%20diagn%C3%B3stico%20gr%C3%A1tis%20do%20Google" class="cta-whatsapp" target="_blank" rel="noopener">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                    </svg>
-                    <span>Solicitar Diagnóstico Grátis</span>
-                </a>
-                <p class="cta-helper">Análise gratuita do Google • Resposta em até 2h</p>
+        <header class="hero reveal">
+            <div class="hero-bg" aria-hidden="true"></div>
+
+            <img src="logo.png" alt="Mike PDR Expert" class="brand-logo" onerror="this.style.display='none'">
+
+            <div class="profile-wrapper">
+                <img src="mike-foto.jpg" alt="Mike PDR Expert - Técnico PDR e Especialista em Marketing Automotivo" class="profile-photo" onerror="this.src='https://ui-avatars.com/api/?name=Mike+PDR&background=12121A&color=25D366&size=140&bold=true'">
             </div>
-        </section>
-        
-        <!-- DOR -->
-        <section class="pain-section">
-            <div class="container">
-                <h2>Sua oficina aparece no Google quando alguém pesquisa <span>"perto de mim"?</span></h2>
-                <p class="pain-stat"><strong>76%</strong> das pessoas que buscam serviço automotivo no celular visitam o local em menos de 24h.</p>
-                <p class="pain-stat">Se você não aparece nos 3 primeiros resultados, o cliente vai pro concorrente do bairro.</p>
-                <p class="pain-stat">Não importa quanto você é bom no que faz — <strong>se ninguém te encontra, ninguém te contrata.</strong></p>
+
+            <div class="badge-hero">Técnico PDR &amp; Especialista em Marketing Automotivo</div>
+
+            <h1>Sua Oficina no <span class="gradient-text">Topo do Google</span></h1>
+            <p class="hero-subtitle">Martelinho, funilaria, pintura ou estética — quando alguém pesquisa no Google da sua cidade, é o seu WhatsApp que precisa aparecer primeiro.</p>
+
+            <div class="flags">
+                <span>🇧🇷 Brasil</span> &bull; <span>🇺🇸 Estados Unidos</span>
             </div>
-        </section>
-        
-        <!-- SOLUÇÕES -->
-        <section class="solutions">
-            <p class="section-title">Como eu ajudo</p>
-            <div class="solution-grid">
-                <div class="solution-card">
-                    <div class="solution-icon">📍</div>
-                    <h3>Site Profissional</h3>
-                    <p>Site otimizado pra busca local, entregue em 48h, com WhatsApp integrado e Google Meu Negócio configurado.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">📈</div>
-                    <h3>Posicionamento no Google</h3>
-                    <p>Acompanhamento mensal pra sua oficina aparecer mais quando alguém pesquisa serviços automotivos no seu bairro.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">💎</div>
-                    <h3>PDR Especializado</h3>
-                    <p>Trabalho como técnico de Martelinho de Ouro nos EUA. Entendo a rotina da oficina porque eu sou um de vocês.</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- DIFERENCIAL -->
-        <section class="differential">
-            <p class="section-title">Por que eu sou diferente</p>
-            <ul class="diff-list">
-                <li><span class="diff-icon no">✕</span><span>Não sou agência genérica que nunca pisou numa oficina</span></li>
-                <li><span class="diff-icon no">✕</span><span>Não falo "linguagem de marketing" complicada</span></li>
-                <li><span class="diff-icon yes">✓</span><span>Sou técnico de PDR atuando no Brasil e Estados Unidos</span></li>
-                <li><span class="diff-icon yes">✓</span><span>Atendo em português e inglês</span></li>
-                <li><span class="diff-icon yes">✓</span><span>Falo a sua língua. Entendo a sua dor</span></li>
-                <li><span class="diff-icon yes">✓</span><span>Resolvo SEM você precisar entender de tecnologia</span></li>
-            </ul>
-        </section>
-        
-        <!-- CTA FINAL -->
-        <section class="final-cta">
-            <h2>Diagnóstico Gratuito do Seu Google</h2>
-            <p>Eu gero pra você um relatório visual mostrando EXATAMENTE onde sua oficina aparece (ou não aparece) quando alguém busca seu serviço.</p>
-            
-            <a href="https://wa.me/553199999999?text=Ol%C3%A1%20Mike%2C%20quero%20meu%20diagn%C3%B3stico%20gr%C3%A1tis%20do%20Google" class="cta-whatsapp" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                </svg>
-                <span>Quero Meu Diagnóstico Grátis</span>
+
+            <a href="https://wa.me/553199999999?text=Ol%C3%A1%20Mike%2C%20quero%20meu%20diagn%C3%B3stico%20gratuito%20de%20posicionamento%20no%20Google" class="cta-btn" id="heroCta" target="_blank" rel="noopener" aria-label="Solicitar diagnóstico gratuito via WhatsApp">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+                Solicitar Diagnóstico Grátis
             </a>
-            
-            <ul class="checks">
-                <li>Resposta em até 2 horas (horário comercial)</li>
-                <li>Análise personalizada da sua oficina</li>
-                <li>Sem cobrança, sem cadastro</li>
-            </ul>
+            <div class="cta-helper">Sem compromisso &bull; Retorno em até 2h</div>
+        </header>
+
+        <!-- SOCIAL PROOF STRIP -->
+        <div class="social-proof-strip reveal">
+            <div class="proof-avatars">
+                <div class="proof-avatar av-1">RC</div>
+                <div class="proof-avatar av-2">MS</div>
+                <div class="proof-avatar av-3">JL</div>
+                <div class="proof-avatar av-4">AP</div>
+                <div class="proof-avatar av-5">+</div>
+            </div>
+            <div class="proof-counter">
+                <span class="proof-number" data-counter data-target="47" data-suffix="+">0</span>
+                <span class="proof-label">oficinas dominando o Google</span>
+            </div>
+        </div>
+
+        <!-- PAIN SECTION -->
+        <section class="pain-section reveal">
+            <h2>Você está entregando dinheiro para o concorrente.</h2>
+            <span class="stat-number" data-counter data-target="76" data-suffix="%">0</span>
+            <p class="pain-text">Das pessoas que buscam serviço automotivo no celular visitam ou ligam para a oficina no <strong>mesmo dia</strong>.</p>
+            <p class="pain-text">Se ninguém te encontra nos 3 primeiros lugares, <strong>ninguém te contrata.</strong></p>
         </section>
-        
-        <!-- REDES SOCIAIS -->
-        <section class="social-section">
-            <p class="section-title">Explore mais</p>
-            <div class="social-grid">
-                
-                <a href="https://mikemartelinhodeouro.com" class="social-link" target="_blank" rel="noopener">
-                    <div class="social-icon icon-blog-pt">📝</div>
-                    <div class="social-text">
-                        <div class="social-title">Blog em Português</div>
-                        <div class="social-desc">Artigos sobre PDR, granizo e marketing</div>
+
+        <!-- SOLUTIONS -->
+        <section class="reveal">
+            <div class="section-header">
+                <div class="section-label">O que eu faço pela sua oficina</div>
+            </div>
+            <div class="cards-grid">
+                <div class="solution-card">
+                    <div class="card-icon card-icon-green">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                     </div>
-                    <span class="social-arrow">→</span>
-                </a>
-                
-                <a href="https://mikepdrexpert.com" class="social-link" target="_blank" rel="noopener">
-                    <div class="social-icon icon-blog-en">📝</div>
-                    <div class="social-text">
-                        <div class="social-title">Blog in English</div>
-                        <div class="social-desc">PDR, hail damage and shop tips</div>
+                    <h3>Site Focado em Vendas</h3>
+                    <p>Página otimizada em 48h para capturar clientes locais. Google Meu Negócio configurado.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon card-icon-gold">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
                     </div>
-                    <span class="social-arrow">→</span>
-                </a>
-                
-                <a href="https://www.instagram.com/mikepdrexpert" class="social-link" target="_blank" rel="noopener">
-                    <div class="social-icon icon-instagram">📸</div>
-                    <div class="social-text">
-                        <div class="social-title">Instagram</div>
-                        <div class="social-desc">Conteúdo diário de PDR e bastidores</div>
+                    <h3>Domínio Local no Google</h3>
+                    <p>SEO local para você ser a opção #1 quando alguém pesquisar martelinho, funilaria ou polimento na sua região.</p>
+                </div>
+                <div class="solution-card">
+                    <div class="card-icon card-icon-blue">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
                     </div>
-                    <span class="social-arrow">→</span>
-                </a>
-                
-                <a href="https://www.facebook.com/MikePDRexpert/" class="social-link" target="_blank" rel="noopener">
-                    <div class="social-icon icon-facebook">📘</div>
-                    <div class="social-text">
-                        <div class="social-title">Facebook</div>
-                        <div class="social-desc">Acompanhe minha página oficial</div>
-                    </div>
-                    <span class="social-arrow">→</span>
-                </a>
-                
-                <a href="https://www.youtube.com/@MikePDRExpert.oficial" class="social-link" target="_blank" rel="noopener">
-                    <div class="social-icon icon-youtube">▶️</div>
-                    <div class="social-text">
-                        <div class="social-title">YouTube</div>
-                        <div class="social-desc">Vídeos completos de técnica e dicas</div>
-                    </div>
-                    <span class="social-arrow">→</span>
-                </a>
-                
-                <a href="https://www.tiktok.com/@mikepdrexpert" class="social-link" target="_blank" rel="noopener">
-                    <div class="social-icon icon-tiktok">🎵</div>
-                    <div class="social-text">
-                        <div class="social-title">TikTok</div>
-                        <div class="social-desc">Vídeos curtos da rotina de PDR</div>
-                    </div>
-                    <span class="social-arrow">→</span>
-                </a>
-                
-                <a href="https://x.com/mikepdrexpert" class="social-link" target="_blank" rel="noopener">
-                    <div class="social-icon icon-x">𝕏</div>
-                    <div class="social-text">
-                        <div class="social-title">X (Twitter)</div>
-                        <div class="social-desc">Atualizações rápidas e insights</div>
-                    </div>
-                    <span class="social-arrow">→</span>
-                </a>
-                
+                    <h3>Gestão de Avaliações</h3>
+                    <p>Estratégia para ganhar 5 estrelas no Google e se destacar da concorrência local.</p>
+                </div>
             </div>
         </section>
-        
+
+        <!-- TESTIMONIALS -->
+        <section class="testimonials-section reveal">
+            <div class="section-header">
+                <div class="section-label">Resultados reais</div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">"Em 3 semanas meu telefone não parou. Antes eu ficava esperando indicação, agora o Google traz cliente novo de martelinho todo dia."</p>
+                <div class="testimonial-footer">
+                    <div>
+                        <div class="testimonial-author">Ricardo C.</div>
+                        <div class="testimonial-city">Belo Horizonte, MG &bull; Martelinho de Ouro</div>
+                    </div>
+                    <span class="testimonial-result">+340% ligações</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">"Eu gastava R$2.000/mês em panfleto. Com o Mike, investi uma vez e a agenda da pintura ficou cheia todo mês."</p>
+                <div class="testimonial-footer">
+                    <div>
+                        <div class="testimonial-author">Marcos S.</div>
+                        <div class="testimonial-city">Campinas, SP &bull; Lanternagem e Pintura</div>
+                    </div>
+                    <span class="testimonial-result">Agenda lotada</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-stars">
+                    <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+                </div>
+                <p class="testimonial-text">"Saí da página 4 para o top 3 em menos de 2 meses. Polimento, vitrificação, higienização — cada serviço aparece quando o cliente procura."</p>
+                <div class="testimonial-footer">
+                    <div>
+                        <div class="testimonial-author">Anderson P.</div>
+                        <div class="testimonial-city">Orlando, FL (EUA) &bull; Estética Automotiva</div>
+                    </div>
+                    <span class="testimonial-result">Top 3 Google</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- OBJECTIONS -->
+        <section class="reveal">
+            <div class="section-header">
+                <div class="section-label">Por que não uma agência?</div>
+            </div>
+            <ul class="objections-list">
+                <li>
+                    <span class="icon-badge icon-badge-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+                    <span>Agências genéricas não diferenciam PDR, repintura ou polimento.</span>
+                </li>
+                <li>
+                    <span class="icon-badge icon-badge-red"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>
+                    <span>Falam bonito sobre "métricas" mas não trazem carros pra porta.</span>
+                </li>
+                <li>
+                    <span class="icon-badge icon-badge-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                    <span><strong>Sou do ramo automotivo.</strong> Conheço a rotina da oficina por dentro.</span>
+                </li>
+                <li>
+                    <span class="icon-badge icon-badge-green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                    <span><strong>Resolvo a captação</strong> pra você focar na bancada e na entrega.</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ABOUT / AUTHORITY -->
+        <section class="about-section reveal">
+            <div class="about-photo-wrap">
+                <img src="mike-foto.jpg" alt="Mike PDR Expert na oficina ao lado de um BMW preto" onerror="this.parentElement.style.display='none'">
+                <span class="about-photo-badge">Mike na oficina</span>
+            </div>
+            <div class="about-content">
+                <div class="section-label">Quem é o Mike</div>
+                <h3>Bancada de Martelinho + Marketing Local. <span class="accent">Quem une os dois sai na frente.</span></h3>
+
+                <p>Sou <strong>Técnico de Martelinho de Ouro</strong> com a mão calejada em <strong>granizo, amassados de rua e vincos de porta</strong>. Conheço cada milímetro da arte de devolver a chapa original do carro — sem tinta, sem massa, sem repintura.</p>
+
+                <p>Só que técnica boa, sozinha, <strong>não enche oficina nenhuma</strong>. Quem enche é quem o cliente encontra primeiro no Google.</p>
+
+                <p>Por isso eu uno duas coisas que <strong>nenhum concorrente seu une</strong>: a <strong>funilaria artesanal de bancada</strong> e as <strong>técnicas modernas de marketing local</strong> que dominam o Google da sua cidade.</p>
+
+                <p>Enquanto a oficina do lado paga agência genérica que confunde PDR com repintura, <strong>você sai na frente</strong> com quem fala a sua língua — e entrega cliente real na sua porta.</p>
+
+                <div class="about-credentials">
+                    <span class="credential-chip">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Especialista em Granizo
+                    </span>
+                    <span class="credential-chip">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Amassados de Rua
+                    </span>
+                    <span class="credential-chip">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Funilaria Artesanal
+                    </span>
+                    <span class="credential-chip">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Marketing Local
+                    </span>
+                    <span class="credential-chip">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"/></svg>
+                        Brasil &amp; EUA
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- BEFORE/AFTER RESULTS -->
+        <section class="results-section reveal">
+            <div class="section-header">
+                <div class="section-label">Antes e depois</div>
+            </div>
+            <div class="results-comparison">
+                <div class="result-box result-before">
+                    <div class="result-label">Antes</div>
+                    <div class="result-position">#47</div>
+                    <div class="result-desc">Invisível no Google. Zero ligações orgânicas.</div>
+                </div>
+                <div class="result-box result-after">
+                    <div class="result-label">Depois</div>
+                    <div class="result-position" data-counter data-target="3" data-prefix="#">0</div>
+                    <div class="result-desc">Top 3. Telefone tocando todo dia.</div>
+                </div>
+            </div>
+            <p class="results-badge">Resultado médio dos clientes em <strong>60 dias</strong></p>
+        </section>
+
+        <!-- FINAL CTA -->
+        <section class="final-cta reveal-scale">
+            <div class="urgency-badge" id="urgencyBadge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span id="urgencyText">Restam 5 vagas este mês</span>
+            </div>
+
+            <h2>Pronto para dominar o Google?</h2>
+            <p>Descubra por que sua oficina não aparece e como resolver em dias.</p>
+
+            <ul class="cta-bullets">
+                <li>Análise completa do seu posicionamento atual</li>
+                <li>Mapa de oportunidades na sua região</li>
+                <li>Plano de ação personalizado</li>
+                <li>Sem compromisso, sem enrolação</li>
+            </ul>
+
+            <a href="https://wa.me/553199999999?text=Ol%C3%A1%20Mike%2C%20quero%20meu%20diagn%C3%B3stico%20gratuito%20de%20posicionamento%20no%20Google" class="cta-btn" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+                Quero Meu Diagnóstico Grátis
+            </a>
+
+            <div class="trust-row">
+                <span class="trust-item">&#10003; Gratuito</span>
+                <span class="trust-item">&#10003; Sem compromisso</span>
+                <span class="trust-item">&#10003; Resultado em 7 dias</span>
+            </div>
+        </section>
+
+        <!-- INSTAGRAM CTA -->
+        <section class="instagram-section reveal">
+            <div class="section-header">
+                <div class="section-label">Acompanhe meu dia a dia</div>
+            </div>
+
+            <a href="https://www.instagram.com/mikepdrexpert" class="instagram-card" target="_blank" rel="noopener" aria-label="Seguir Mike PDR Expert no Instagram">
+                <div class="ig-glow"></div>
+                <div class="ig-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="2"/>
+                        <circle cx="17.5" cy="6.5" r="1.3" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="ig-content">
+                    <div class="ig-handle">@mikepdrexpert</div>
+                    <div class="ig-title">Bastidores, reparos e marketing automotivo</div>
+                    <div class="ig-stats">
+                        <span class="ig-stat-dot"></span>
+                        Conteúdo novo toda semana
+                    </div>
+                </div>
+                <div class="ig-cta">
+                    <span>Seguir</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </div>
+            </a>
+        </section>
+
         <!-- FOOTER -->
         <footer>
-            <div class="footer-name">Mike PDR Expert</div>
-            <p>Atendendo Brasil 🇧🇷 e Estados Unidos 🇺🇸</p>
-            <p style="margin-top: 8px;">📧 <a href="mailto:mikepdrexpert@gmail.com">mikepdrexpert@gmail.com</a></p>
-            <p style="margin-top: 16px; opacity: 0.6; font-size: 12px;">© 2026 Mike PDR Expert</p>
+            <div><strong>Mike PDR Expert</strong> &copy; 2026</div>
+            <div style="margin-top: 8px; opacity: 0.6;">Marketing para martelinho de ouro, lanternagem, pintura e estética automotiva.</div>
+            <div style="margin-top: 4px; opacity: 0.5; font-size: 11px;">Focado em lucro. Focado em resultados.</div>
         </footer>
-        
+
     </div>
+
+    <!-- STICKY CTA BAR -->
+    <div class="sticky-cta" id="stickyCta" aria-hidden="true">
+        <a href="https://wa.me/553199999999?text=Ol%C3%A1%20Mike%2C%20quero%20meu%20diagn%C3%B3stico%20gratuito%20de%20posicionamento%20no%20Google" class="cta-btn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+            Diagnóstico Grátis via WhatsApp
+        </a>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast" role="alert" aria-live="polite">
+        <div class="toast-avatar" id="toastAvatar">J</div>
+        <div class="toast-content">
+            <div class="toast-message" id="toastMessage">João de BH acabou de solicitar o diagnóstico</div>
+            <div class="toast-time">agora mesmo</div>
+        </div>
+    </div>
+
+    <script>
+    ;(function() {
+        'use strict';
+
+        var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        // === NOTIFICATION BAR ===
+        var notifBar = document.getElementById('notifBar');
+        var notifClose = document.getElementById('notifClose');
+        if (sessionStorage.getItem('notif-dismissed')) {
+            notifBar.classList.add('hidden');
+        }
+        notifClose.addEventListener('click', function() {
+            notifBar.classList.add('hidden');
+            sessionStorage.setItem('notif-dismissed', '1');
+        });
+
+        // === SCROLL REVEAL ===
+        var reveals = document.querySelectorAll('.reveal, .reveal-scale');
+        if (prefersReducedMotion) {
+            reveals.forEach(function(el) { el.classList.add('visible'); });
+        } else {
+            var revealObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        var el = entry.target;
+                        var siblings = el.parentElement.querySelectorAll('.reveal, .reveal-scale');
+                        var idx = Array.prototype.indexOf.call(siblings, el);
+                        el.style.transitionDelay = (idx * 80) + 'ms';
+                        el.classList.add('visible');
+                        revealObserver.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+            reveals.forEach(function(el) { revealObserver.observe(el); });
+        }
+
+        // === ANIMATED COUNTERS ===
+        var counters = document.querySelectorAll('[data-counter]');
+        function easeOutExpo(t) { return t === 1 ? 1 : 1 - Math.pow(2, -10 * t); }
+
+        function animateCounter(el) {
+            var target = parseInt(el.getAttribute('data-target'), 10);
+            var suffix = el.getAttribute('data-suffix') || '';
+            var prefix = el.getAttribute('data-prefix') || '';
+            var duration = 2000;
+            var start = performance.now();
+
+            function update(now) {
+                var elapsed = now - start;
+                var progress = Math.min(elapsed / duration, 1);
+                var value = Math.round(easeOutExpo(progress) * target);
+                el.textContent = prefix + value + suffix;
+                if (progress < 1) requestAnimationFrame(update);
+            }
+            requestAnimationFrame(update);
+        }
+
+        if (prefersReducedMotion) {
+            counters.forEach(function(el) {
+                var prefix = el.getAttribute('data-prefix') || '';
+                var suffix = el.getAttribute('data-suffix') || '';
+                el.textContent = prefix + el.getAttribute('data-target') + suffix;
+            });
+        } else {
+            var counterObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        animateCounter(entry.target);
+                        counterObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            counters.forEach(function(el) { counterObserver.observe(el); });
+        }
+
+        // === STICKY CTA ===
+        var stickyCta = document.getElementById('stickyCta');
+        var heroCta = document.getElementById('heroCta');
+
+        var stickyObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (!entry.isIntersecting) {
+                    stickyCta.classList.add('visible');
+                    stickyCta.setAttribute('aria-hidden', 'false');
+                } else {
+                    stickyCta.classList.remove('visible');
+                    stickyCta.setAttribute('aria-hidden', 'true');
+                }
+            });
+        }, { threshold: 0 });
+        stickyObserver.observe(heroCta);
+
+        // === URGENCY BADGE ===
+        var urgencyText = document.getElementById('urgencyText');
+        var monthKey = 'urgency-' + new Date().getFullYear() + '-' + new Date().getMonth();
+        var spots = localStorage.getItem(monthKey);
+        if (!spots) {
+            spots = 3 + Math.floor(Math.random() * 5);
+            localStorage.setItem(monthKey, spots);
+        } else {
+            spots = parseInt(spots, 10);
+        }
+        urgencyText.textContent = 'Restam apenas ' + spots + ' vagas este mês';
+
+        // Decrement once per session after 90s
+        if (!sessionStorage.getItem('urgency-dec')) {
+            setTimeout(function() {
+                if (spots > 1) {
+                    spots--;
+                    localStorage.setItem(monthKey, spots);
+                    urgencyText.textContent = 'Restam apenas ' + spots + ' vagas este mês';
+                    sessionStorage.setItem('urgency-dec', '1');
+                }
+            }, 90000);
+        }
+
+        // === SOCIAL PROOF TOAST ===
+        var toast = document.getElementById('toast');
+        var toastAvatar = document.getElementById('toastAvatar');
+        var toastMessage = document.getElementById('toastMessage');
+
+        var names = [
+            { name: 'João', city: 'BH', initial: 'J' },
+            { name: 'Pedro', city: 'SP', initial: 'P' },
+            { name: 'Carlos', city: 'RJ', initial: 'C' },
+            { name: 'Marcos', city: 'Curitiba', initial: 'M' },
+            { name: 'Rafael', city: 'Campinas', initial: 'R' },
+            { name: 'Anderson', city: 'Goiânia', initial: 'A' },
+            { name: 'Lucas', city: 'Fortaleza', initial: 'L' },
+            { name: 'Fernando', city: 'Salvador', initial: 'F' }
+        ];
+        var actions = ['acabou de solicitar o diagnóstico', 'recebeu seu relatório', 'fechou o plano de ação'];
+
+        var toastCount = parseInt(sessionStorage.getItem('toast-count') || '0', 10);
+        var toastTriggered = false;
+        var scrollDepthMax = 0;
+
+        function showToast() {
+            if (toastCount >= 3 || prefersReducedMotion) return;
+            var person = names[Math.floor(Math.random() * names.length)];
+            var action = actions[Math.floor(Math.random() * actions.length)];
+            toastAvatar.textContent = person.initial;
+            toastMessage.textContent = person.name + ' de ' + person.city + ' ' + action;
+            toast.classList.add('show');
+            toastCount++;
+            sessionStorage.setItem('toast-count', toastCount);
+            setTimeout(function() { toast.classList.remove('show'); }, 4500);
+        }
+
+        function checkScrollDepth() {
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            var depth = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            if (depth > scrollDepthMax) scrollDepthMax = depth;
+
+            if (scrollDepthMax >= 55 && !toastTriggered) {
+                toastTriggered = true;
+                setTimeout(showToast, 3000);
+                // Schedule more
+                setTimeout(showToast, 28000);
+                setTimeout(showToast, 55000);
+            }
+        }
+
+        var scrollThrottle = false;
+        window.addEventListener('scroll', function() {
+            if (scrollThrottle) return;
+            scrollThrottle = true;
+            requestAnimationFrame(function() {
+                checkScrollDepth();
+                scrollThrottle = false;
+            });
+        }, { passive: true });
+
+    })();
+    </script>
 
 </body>
 </html>
